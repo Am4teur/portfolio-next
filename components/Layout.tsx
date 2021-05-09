@@ -1,5 +1,5 @@
-import React from 'react';
-
+// components
+import Meta from './Meta';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
@@ -13,13 +13,13 @@ interface layoutProps {
 export default function Layout({ children }: layoutProps) {
   return (
     <div>
+      <Meta title="Daniel Castro"/> 
       <Sidebar/>
       
       <div className={styles.container}>
         {children}
         <Footer/>
       </div>
-
     </div>
   )
 };
