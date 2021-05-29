@@ -1,0 +1,50 @@
+.about {
+  height: 200px;
+  width: 100%;
+}
+
+.projects {
+  min-height: 200px;
+  width: 100%;
+}
+
+.blog {
+  height: 200px;
+  width: 100%;
+}
+
+.centered {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.image {
+  border-radius: 1rem;
+  border: 1rem solid black;
+  box-shadow: 1rem;
+}
+
+.listProjects {
+  $n: 3;
+  $gap: 1.5rem;
+  $w: 300px;
+
+  display:grid;
+  /* amazing post https://dev.to/afif/build-your-responsive-website-without-media-query-omj*/
+  grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(#{$n} + 1) + 0.1%, #{$w}, 100%), 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  gap: #{$gap};
+
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+}
+
+.item {
+  height: 100px;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+}
