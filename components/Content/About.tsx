@@ -1,9 +1,13 @@
 import React from 'react';
 
+import styles from '../../styles/Content.module.scss';
+
 export default function About() {
   return (
-    <section>
-      About
+    <section className={styles.about}>
+      <div className={styles.centered}>
+        About
+      </div>
     </section>
   )
 }

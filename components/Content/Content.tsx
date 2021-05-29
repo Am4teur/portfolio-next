@@ -1,32 +1,25 @@
-import React from 'react';
+// Next
 import Image from 'next/image';
 
-import styles from '../../styles/Home.module.scss';
-
-import Home from './Home';
+// components
 import About from './About';
-import Blog from './Blog';
+//import Blog from './Blog';
 import Projects from './Projects';
+import Contact from './Contact';
+// Contact
+
+// styles
+import styles from '../../styles/Content.module.scss';
 
 
 export default function Content() {
   return (
-    <div className={styles.main}>
-      <div style={{border: "round"}}>
-        <Image
-          className={styles.image}
-          src="/images/profile.jpg"
-          alt="Daniel Castro"
-          width={450}
-          height={495}>
-        </Image>
-      </div>
-      <Home />
+    <>
+      <Image className={styles.image} src="/images/profile.jpg" alt="Daniel Castro" width={450} height={495} ></Image>
       <About />
-      <Blog />
       <Projects />
-      
-      <button className={styles.button}>Click me!</button>
-    </div>
+      {/*<Blog />*/}
+      <Contact />
+    </>
   )
 }
