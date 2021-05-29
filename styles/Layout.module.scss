@@ -1,4 +1,7 @@
 $sidebar-width: 5rem;
+$bg-color-primary: #007acc;
+$bg-color-secondary: #333333;
+$transition-speed: "60ms";
 
 .container {
   min-height: 100vh;
@@ -21,7 +24,7 @@ $sidebar-width: 5rem;
 .sidebar {
   position: fixed;
   width: $sidebar-width;
-  background-color: var(--bg-secondary);
+  background-color: $bg-color-secondary;
   transition: width 200ms ease;
   z-index: 1;
 }
@@ -61,16 +64,16 @@ $sidebar-width: 5rem;
   display: flex;
   align-items: center;
   height: 5rem;
-  color: var(--bg-primary);
+  color: $bg-color-primary;
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
+  transition: $transition-speed;
 }
 
 .sidebar_link:hover {
   filter: grayscale(0%) opacity(1);
   background-color: gray;
-  color: var(--bg-primary);
+  color: $bg-color-primary;
 }
 
 .item_text {
@@ -165,6 +168,6 @@ $sidebar-width: 5rem;
   
   .sidebar:hover .item_text {
     display: block;
-    transition: opacity var(--transition-speed);
+    transition: opacity $transition-speed;
   }
 }

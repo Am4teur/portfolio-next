@@ -1,3 +1,5 @@
+$btn-color-gradient: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
 .contact{
   height: auto;
   width: 500px;
@@ -45,17 +47,9 @@
   }
 }
 
-
-
-
-
-
-
-
-
 .button {
   padding: 0.5rem 1rem 0.5rem 1rem;
-  background: var(--bg-gradient);
+  background: $btn-color-gradient;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;  
