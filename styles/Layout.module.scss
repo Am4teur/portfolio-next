@@ -2,6 +2,7 @@ $sidebar-width: 5rem;
 $bg-color-primary: #007acc;
 $bg-color-secondary: #333333;
 $transition-speed: "60ms";
+$transition-sidebar-speed: "200ms";
 
 .container {
   min-height: 100vh;
@@ -23,10 +24,13 @@ $transition-speed: "60ms";
 
 .sidebar {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   width: $sidebar-width;
   background-color: $bg-color-secondary;
-  transition: width 200ms ease;
   z-index: 1;
+
+  transition: width #{$transition-sidebar-speed} ease;
 }
 
 .sidebar_logo {
@@ -42,8 +46,10 @@ $transition-speed: "60ms";
   transition: transform 400ms;
 }
 
-.sidebar:hover .sidebar_logo svg {
-  transform: rotate(-180deg);
+.sidebar:hover {
+  .sidebar_logo svg {
+    transform: rotate(-180deg);
+  }
 }
 
 .sidebar_items {
@@ -77,8 +83,10 @@ $transition-speed: "60ms";
 }
 
 .item_text {
-  display: none;
-  margin-left: 1rem;
+
+  opacity: 0;
+  margin-left: 0.25rem;
+  transition: opacity #{$transition-sidebar-speed};
 }
 
 .sidebar_item svg {
@@ -166,8 +174,9 @@ $transition-speed: "60ms";
     width: 12rem;
   }
   
-  .sidebar:hover .item_text {
-    display: block;
-    transition: opacity $transition-speed;
+  .sidebar:hover {
+    .item_text {
+      opacity: 1;
+    }
   }
 }
