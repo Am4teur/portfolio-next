@@ -73,6 +73,8 @@ $transition-sidebar-speed: "200ms";
   color: $bg-color-primary;
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
+  cursor: pointer;
+  
   transition: $transition-speed;
 }
 
@@ -98,7 +100,7 @@ $transition-sidebar-speed: "200ms";
 
 .footer {
   width: 100%;
-  border-top: 1px solid #eaeaea;
+  border-top: 2px solid #eaeaea;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +130,10 @@ $transition-sidebar-speed: "200ms";
       height: 1rem;
       width: 1rem;
     }
+  }
+
+  .link_name {
+    color: "#007acc";
   }
 }
 

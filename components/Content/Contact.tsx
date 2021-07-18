@@ -28,20 +28,22 @@ export default function Contact() {
       <form onSubmit={sendEmail}>
         <div className={styles.header}>
           <div className={styles.field}>
-            <label>Name</label>
-            <input type="text" name="name"/>
+            <label className={styles.label}>Name</label>
+            <input className={styles.input} type="text" name="name"/>
           </div>
           <div className={styles.field}>
-            <label>Email</label>
-            <input type="email" name="email"/>
+            <label className={styles.label}>Email</label>
+            <input className={styles.input} type="email" name="email" placeholder="youremail@mail.com"/>
           </div>
         </div>
         <div className={styles.field}>
-          <label>Message</label>
-          <textarea name="message"></textarea>
+          <label className={styles.label}>Message</label>
+          <textarea className={styles.message} name="message"></textarea>
+        </div>
+        <div className={styles.centered}>
+          <button className={styles['submit-button']} type="submit">Send</button>
         </div>
               
-        <button className={[styles.button, styles.centered].join(' ')} type="submit">Send</button>
       </form>
     </section>
   )

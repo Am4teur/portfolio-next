@@ -37,7 +37,7 @@ export default function Footer() {
       </ul>
 
       <div className={styles.footer_copyright}>© 2021 Copyright and Created by&nbsp;
-        <a style={{color: "white"}} href="https://github.com/Am4teur">Daniel Castro&nbsp;</a>
+        <a className={styles.link_name} href="https://github.com/Am4teur">Daniel Castro&nbsp;</a>
         with &nbsp;
         <a href="https://reactjs.org/"><img src="/svg/react.svg" alt="React"/></a> &nbsp;
         <a href="https://www.typescriptlang.org/"><img src="/svg/typescript-icon.svg" alt="Typescript"/></a> &nbsp;
