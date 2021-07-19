@@ -60,7 +60,10 @@ const Button = styled.button`
   `}
 
   &:hover {
-
     background: #005c99; // HSL #007acc 60% dark => HSL #005c99 30% dark
   }
+
+  @media only screen and (max-width: 600px) {
+    bottom: calc(5rem + 20px); // 5rem = sidebar height when on bottom + 20px normal bottom size
+    right: 20px;
 `;
