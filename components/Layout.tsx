@@ -1,7 +1,7 @@
 // components
-
 import Sidebar from './Sidebar';
 import Footer from './Footer';
+import ToTop from './ToTop';
 
 // styles
 import styles from '../styles/Layout.module.scss';
@@ -20,6 +20,7 @@ export default function Layout({ children }: layoutProps) {
         {children}
         <Footer/>
       </div>
+      <ToTop/>
     </div>
   )
 };
