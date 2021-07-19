@@ -36,15 +36,15 @@ $transition-sidebar-speed: "200ms";
 
 .sidebar_logo {
   width: 100%;
-}
-
-.sidebar_logo img {
-  min-width: 2rem;
-  margin: 0 1.5rem;
-  width: 2rem;
-  height: 2rem;
-  transform: rotate(0deg);
-  transition: transform 400ms;
+  
+  svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(0deg);
+    transition: transform 400ms;
+  }
 }
 
 .sidebar:hover {
@@ -65,6 +65,13 @@ $transition-sidebar-speed: "200ms";
 
 .sidebar_item {
   width: 100%;
+
+  svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .sidebar_link {
@@ -77,12 +84,12 @@ $transition-sidebar-speed: "200ms";
   cursor: pointer;
   
   transition: $transition-speed;
-}
 
-.sidebar_link:hover {
-  filter: grayscale(0%) opacity(1);
-  background-color: gray;
-  color: $bg-color-primary;
+  &:hover {
+    filter: grayscale(0%) opacity(1);
+    background-color: gray;
+    color: $bg-color-primary;
+  }
 }
 
 .item_text {
@@ -90,13 +97,6 @@ $transition-sidebar-speed: "200ms";
   opacity: 0;
   margin-left: 0.25rem;
   transition: opacity #{$transition-sidebar-speed};
-}
-
-.sidebar_item img {
-  min-width: 2rem;
-  margin: 0 1.5rem;
-  width: 2rem;
-  height: 2rem;
 }
 
 /* FOOTER */
@@ -140,7 +140,7 @@ $transition-sidebar-speed: "200ms";
 }
 
 /* TO TOP */
-.arrowTop {
+.arrowUp {
   min-width: 2rem;
   margin: 0 1.5rem;
   width: 2rem;
