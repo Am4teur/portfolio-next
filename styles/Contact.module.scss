@@ -1,6 +1,7 @@
 $btn-color-gradient: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
 $border-color: #e0e1e4;
 $border-color-focus: #b8d9ef;
+$shadow-color: #e0e1e4;
 
 .contact{
   margin: 0.5rem 0 2rem 0;
@@ -21,8 +22,8 @@ $border-color-focus: #b8d9ef;
   margin: 1rem 0 1rem 0;
   padding: 4.5rem 4rem 4.5rem 4rem;
   background: white;
-  box-shadow: 0 0 10px 3px $border-color;
-  border-radius: 4px;
+  box-shadow: 0 0 10px 3px $shadow-color;
+  border-radius: 0.25rem;
 }
 
 .auth {

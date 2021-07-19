@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
-import styles from '../../styles/Content.module.scss';
+//import styles from '../../styles/Content.module.scss';
+import styles from '../../styles/Projects.module.scss';
 
 export default function Projects() {
   return (
