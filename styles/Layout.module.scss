@@ -22,6 +22,7 @@ $transition-sidebar-speed: "200ms";
   width: 100%;
 }
 
+/* SIDEBAR */
 .sidebar {
   position: fixed;
   display: flex;
@@ -37,7 +38,7 @@ $transition-sidebar-speed: "200ms";
   width: 100%;
 }
 
-.sidebar_logo svg {
+.sidebar_logo img {
   min-width: 2rem;
   margin: 0 1.5rem;
   width: 2rem;
@@ -47,7 +48,7 @@ $transition-sidebar-speed: "200ms";
 }
 
 .sidebar:hover {
-  .sidebar_logo svg {
+  .sidebar_logo img {
     transform: rotate(-180deg);
   }
 }
@@ -91,13 +92,14 @@ $transition-sidebar-speed: "200ms";
   transition: opacity #{$transition-sidebar-speed};
 }
 
-.sidebar_item svg {
+.sidebar_item img {
   min-width: 2rem;
   margin: 0 1.5rem;
   width: 2rem;
   height: 2rem;
 }
 
+/* FOOTER */
 .footer {
   width: 100%;
   border-top: 2px solid #eaeaea;
@@ -135,6 +137,14 @@ $transition-sidebar-speed: "200ms";
   .link_name {
     color: "#007acc";
   }
+}
+
+/* TO TOP */
+.arrowTop {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* TODO when its exactly 600px it messes up the sidebar */
