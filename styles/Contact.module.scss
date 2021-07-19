@@ -3,7 +3,7 @@ $border-color: #e0e1e4;
 $border-color-focus: #b8d9ef;
 
 .contact{
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0 2rem 0;
   height: auto;
   width: 800px;
 }
@@ -17,9 +17,23 @@ $border-color-focus: #b8d9ef;
   font-size: 3rem;
 }
 
-.header {
+.contact-form {
+  margin: 1rem 0 1rem 0;
+  padding: 4.5rem 4rem 4.5rem 4rem;
+  background: white;
+  box-shadow: 0 0 10px 3px $border-color;
+  border-radius: 4px;
+}
+
+.auth {
   display: flex;
   flex-direction: row;
+}
+
+.header {
+  font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+  font-size: 2rem;
+  margin: 0.5rem;
 }
 
 .field {
@@ -36,7 +50,7 @@ $border-color-focus: #b8d9ef;
   }
 
   .label {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
 

@@ -25,8 +25,9 @@ export default function Contact() {
       <div className={styles.centered}>
         Contact Me!
       </div>
-      <form onSubmit={sendEmail}>
-        <div className={styles.header}>
+      <form className={styles['contact-form']} onSubmit={sendEmail}>
+        <label className={styles.header}>Send me an email</label>
+        <div className={styles.auth}>
           <div className={styles.field}>
             <label className={styles.label}>Name</label>
             <input className={styles.input} type="text" name="name"/>
