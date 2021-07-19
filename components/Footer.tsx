@@ -11,27 +11,27 @@ export default function Footer() {
       <ul className={styles.footer_items}>
         <li className={styles.footer_item}>
           <a href="https://github.com/Am4teur">
-            <img src="/svg/github-square-brands.svg" alt="Github"/>
+            <img src="/svg/footer/github-square-brands.svg" alt="Github"/>
           </a>
         </li>
         <li className={styles.footer_item}>
           <a href="https://www.linkedin.com/in/danieldmcastro/">
-          <img src="/svg/linkedin-brands.svg" alt="Linkedin"/>
+          <img src="/svg/footer/linkedin-brands.svg" alt="Linkedin"/>
           </a>
         </li>
         <li className={styles.footer_item}>
           <a href="https://www.instagram.com/danieldmcastro/">
-          <img src="/svg/instagram-square-brands.svg" alt="Instagram"/>
+          <img src="/svg/footer/instagram-square-brands.svg" alt="Instagram"/>
           </a>
         </li>
         <li className={styles.footer_item}>
           <a href="https://www.facebook.com/daniel.castro.11/">
-          <img src="/svg/facebook-square-brands.svg" alt="Facebook"/>
+          <img src="/svg/footer/facebook-square-brands.svg" alt="Facebook"/>
           </a>
         </li>
         <li className={styles.footer_item}>
           <a href="https://dev.to/am4teur">
-          <img src="/svg/dev-brands.svg" alt="DEV"/>
+          <img src="/svg/footer/dev-brands.svg" alt="DEV"/>
           </a>
         </li>
       </ul>
@@ -39,9 +39,9 @@ export default function Footer() {
       <div className={styles.footer_copyright}>© 2021 Copyright and Created by&nbsp;
         <a className={styles.link_name} href="https://github.com/Am4teur">Daniel Castro&nbsp;</a>
         with &nbsp;
-        <a href="https://reactjs.org/"><img src="/svg/react.svg" alt="React"/></a> &nbsp;
-        <a href="https://www.typescriptlang.org/"><img src="/svg/typescript-icon.svg" alt="Typescript"/></a> &nbsp;
-        <a href="https://nextjs.org/"><img src="/svg/nextjs-icon.svg" alt="Nextjs"/></a>
+        <a href="https://reactjs.org/"><img src="/svg/footer/react.svg" alt="React"/></a> &nbsp;
+        <a href="https://www.typescriptlang.org/"><img src="/svg/footer/typescript-icon.svg" alt="Typescript"/></a> &nbsp;
+        <a href="https://nextjs.org/"><img src="/svg/footer/nextjs-icon.svg" alt="Nextjs"/></a>
       </div>
     </div>
   )
