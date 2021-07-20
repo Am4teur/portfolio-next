@@ -4,21 +4,34 @@ import emailjs from 'emailjs-com';
 import styles from '../../styles/Contact.module.scss';
 
 export default function Contact() {
-  const [error, setError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [success, setSuccess] = useState(false);
 
   const sendEmail = (e:any) => {
     e.preventDefault();
-  
+
+    if(e.target.name.value == "") {
+      setErrorMsg("The name needs to be non-empty!");
+      return;
+    }
+    if(e.target.email.value == "") {
+      setErrorMsg("The email needs to be non-empty!");
+      return;
+    }
+    if(e.target.message.value == "") {
+      setErrorMsg("The message needs to be non-empty!");
+      return;
+    }
+
     emailjs.sendForm('gmail', 'template_7c9ffhq', e.target, 'user_EdIM3cXyfAuPAQWX3gyJ6')
     .then((result) => {
       console.log(result.text);
       setSuccess(true);
-      setError(false);
+      setErrorMsg("");
     }, (error) => {
       console.log(error.text);
       setSuccess(false);
-      setError(true);
+      setErrorMsg("Error sending the email. Please try again later.");
     });
 
     e.target.reset();
@@ -48,7 +61,7 @@ export default function Contact() {
           <textarea className={styles.message} name="message"></textarea>
         </div>
         <div className={styles.field}>
-          {error ? <label className={styles.errorMsg}>Error sending the email. Please try again.</label> : null}
+          {errorMsg !== "" ? <label className={styles.errorMsg}>{errorMsg}</label> : null}
           {success ? <label className={styles.successMsg}>The email was successfully sent.</label> : null}
         </div>
         <div className={styles.centered}>
