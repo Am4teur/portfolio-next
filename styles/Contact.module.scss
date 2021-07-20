@@ -42,6 +42,7 @@ $success-color: #5cb85c;
 .field {
   font-family: 'Segoe UI', sans-serif;
   margin: 0.5rem 0.5rem 1rem 0.5rem;
+  // experiment with gap: x;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -81,7 +82,7 @@ $success-color: #5cb85c;
   margin: 1rem 0 1rem 0;
   padding: 0.5rem 2rem 0.5rem 2rem;
   background: $btn-color-gradient;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   border: 0;
   outline: 0;
   cursor: pointer;  

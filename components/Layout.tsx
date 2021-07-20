@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 // components
 import Sidebar from './Sidebar';
 import Footer from './Footer';
@@ -12,6 +14,11 @@ interface layoutProps {
 }
 
 export default function Layout({ children }: layoutProps) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div className={styles.layout}>
       <Sidebar/>
