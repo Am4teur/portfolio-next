@@ -2,7 +2,7 @@ $sidebar-width: 5rem;
 $bg-color-primary: #007acc;
 $bg-color-secondary: #333333;
 $transition-speed: "60ms";
-$transition-sidebar-speed: "200ms";
+$transition-sidebar-speed: "0.2s";
 
 .layout { /* This makes .darkness full height 100% OK */
   overflow: hidden;
@@ -34,7 +34,7 @@ $transition-sidebar-speed: "200ms";
   flex-direction: column;
   width: $sidebar-width;
   background-color: $bg-color-secondary;
-  z-index: 2;
+  z-index: 3;
 
   transition: width #{$transition-sidebar-speed} ease;
 
@@ -62,8 +62,8 @@ $transition-sidebar-speed: "200ms";
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 1;
-  transition: visibility 0.3s, opacity 0.3s linear;
+  z-index: 2;
+  transition: opacity #{$transition-sidebar-speed} linear;
 }
 
 .sidebar_logo {

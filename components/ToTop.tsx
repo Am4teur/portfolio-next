@@ -47,7 +47,7 @@ const Button = styled.button`
   bottom: 30px;
   right: 30px;
 
-  z-index: 2;
+  z-index: 1;
 
   opacity: 0;
 
