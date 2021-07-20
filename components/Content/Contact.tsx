@@ -21,7 +21,7 @@ export default function Contact() {
 
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div className={styles.centered}>
         Contact Me!
       </div>

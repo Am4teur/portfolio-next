@@ -19,30 +19,37 @@ export default function Sidebar() {
     alert("This is not implemented yet! Thank you.")
   }
 
+  const goToTop = () => {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <nav className={styles.sidebar}>
       <ul className={styles.sidebar_items}>
         <li className={styles.sidebar_logo}>
-          <Link href="/"><a className={styles.sidebar_link}>
+          <Link href="/"><a className={styles.sidebar_link} onClick={goToTop}>
             {arrowRightSVG}
             <span className={styles.item_text}>DC Icon</span>
           </a></Link>
         </li>
         <li className={styles.sidebar_item}>
-          <Link href="/"><a className={styles.sidebar_link}>
+          <Link href="#about"><a className={styles.sidebar_link}>
             {userSVG}
             <span className={styles.item_text}>About</span>
           </a></Link>
         </li>
         <li className={styles.sidebar_item}>
-          <Link href="/"><a className={styles.sidebar_link}>
+          <Link href="#projects"><a className={styles.sidebar_link}>
             {projectSVG}
             <span className={styles.item_text}>Projects</span>
           </a></Link>
         </li>
         {/*
         <li className={styles.sidebar_item}>
-            <Link href="/contact">
+            <Link href="#blog">
               <a className={styles.sidebar_link}>
                 {blogSVG}
                 <span className={styles.item_text}>Blog</span>
@@ -51,7 +58,7 @@ export default function Sidebar() {
         </li>
         */}
         <li className={styles.sidebar_item}>
-          <Link href="/"><a className={styles.sidebar_link}>
+          <Link href="#contact"><a className={styles.sidebar_link}>
             {emailEnvelopeSVG}
             <span className={styles.item_text}>Contact</span>
           </a></Link>
