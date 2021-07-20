@@ -2,6 +2,8 @@ $btn-color-gradient: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186
 $border-color: #e0e1e4;
 $border-color-focus: #b8d9ef;
 $shadow-color: #e0e1e4;
+$danger-color: #d9534f;
+$success-color: #5cb85c;
 
 .contact{
   margin: 0.5rem 0 2rem 0;
@@ -79,9 +81,18 @@ $shadow-color: #e0e1e4;
   margin: 1rem 0 1rem 0;
   padding: 0.5rem 2rem 0.5rem 2rem;
   background: $btn-color-gradient;
-  border-radius: 1rem;
+  border-radius: 0.25rem;
   border: 0;
+  outline: 0;
   cursor: pointer;  
   color: white;
   font-size: 1.25rem;
+}
+
+.errorMsg {
+  color: $danger-color;
+}
+
+.successMsg {
+  color: $success-color;
 }

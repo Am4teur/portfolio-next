@@ -1,9 +1,11 @@
-//import { useState } from 'react';
+import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 import styles from '../../styles/Contact.module.scss';
 
 export default function Contact() {
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const sendEmail = (e:any) => {
     e.preventDefault();
@@ -11,8 +13,12 @@ export default function Contact() {
     emailjs.sendForm('gmail', 'template_7c9ffhq', e.target, 'user_EdIM3cXyfAuPAQWX3gyJ6')
     .then((result) => {
       console.log(result.text);
+      setSuccess(true);
+      setError(false);
     }, (error) => {
       console.log(error.text);
+      setSuccess(false);
+      setError(true);
     });
 
     e.target.reset();
@@ -40,6 +46,10 @@ export default function Contact() {
         <div className={styles.field}>
           <label className={styles.label}>Message</label>
           <textarea className={styles.message} name="message"></textarea>
+        </div>
+        <div className={styles.field}>
+          {error ? <label className={styles.errorMsg}>Error sending the email. Please try again.</label> : null}
+          {success ? <label className={styles.successMsg}>The email was successfully sent.</label> : null}
         </div>
         <div className={styles.centered}>
           <button className={styles['submit-button']} type="submit">Send</button>
