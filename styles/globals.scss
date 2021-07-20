@@ -27,6 +27,8 @@ body {
   margin: 0;
   background: $bg-color-test;
   color: black;
+
+  scroll-behavior: smooth;
 }
 
 a {
