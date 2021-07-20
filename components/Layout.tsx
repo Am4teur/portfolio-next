@@ -13,13 +13,16 @@ interface layoutProps {
 
 export default function Layout({ children }: layoutProps) {
   return (
-    <div>
+    <div className={styles.layout}>
       <Sidebar/>
       
       <div className={styles.container}>
-        {children}
+        <div className={styles.main}>
+          {children}
+        </div>
         <Footer/>
       </div>
+      <div className={styles.darkness}></div>
       <ToTop/>
     </div>
   )

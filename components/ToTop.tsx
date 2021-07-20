@@ -1,6 +1,6 @@
 import React from 'react';
+
 import styled, { css } from 'styled-components';
-//import arrowTop from '../styles/svg/chevron-up-solid.svg';
 import styles from '../styles/Layout.module.scss';
 
 import useScrollPosition from "./Effects/useScrollPosition";
@@ -23,6 +23,7 @@ export default function ToTop() {
     <Button onClick={goToTop} show>{arrowUp}</Button>
     :
     <Button onClick={goToTop}>{arrowUp}</Button>
+    /* This is needed to have the transition of the button appearing from the bottom */
     }
   </>
 }
