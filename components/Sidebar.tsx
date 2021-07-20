@@ -49,12 +49,10 @@ export default function Sidebar() {
         </li>
         {/*
         <li className={styles.sidebar_item}>
-            <Link href="#blog">
-              <a className={styles.sidebar_link}>
-                {blogSVG}
-                <span className={styles.item_text}>Blog</span>
-              </a>  
-            </Link>
+          <Link href="#blog"><a className={styles.sidebar_link}>
+            {blogSVG}
+            <span className={styles.item_text}>Blog</span>
+          </a></Link>
         </li>
         */}
         <li className={styles.sidebar_item}>

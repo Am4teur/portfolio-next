@@ -62,6 +62,7 @@ const Button = styled.button`
 
   &:hover {
     background: #005c99; // HSL #007acc 60% dark => HSL #005c99 30% dark
+    transform: scale(1.25);
   }
 
   @media only screen and (max-width: 600px) {
