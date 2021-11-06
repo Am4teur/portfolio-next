@@ -1,0 +1,37 @@
+@mixin centered {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  
+  min-height: 400px;
+  width: 100%;
+  
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  .card-about {
+    display: flex;
+  
+    .description {
+      flex: 0 0 70%;
+    }
+
+    .image {
+      flex: 0 0 30%;
+      border-radius: 0.25rem;
+    }
+  }
+}

@@ -1,9 +1,4 @@
-$btn-color-gradient: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-$border-color: #e0e1e4;
-$border-color-focus: #b8d9ef;
-$shadow-color: #e0e1e4;
-$danger-color: #d9534f;
-$success-color: #5cb85c;
+@import "colors";
 
 .contact{
   margin: 0.5rem 0 2rem 0;
