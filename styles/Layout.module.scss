@@ -1,6 +1,6 @@
+@import "colors";
+
 $sidebar-width: 5rem;
-$bg-color-primary: #007acc;
-$bg-color-secondary: #333333;
 $transition-speed: "60ms";
 $transition-sidebar-speed: "0.2s";
 
@@ -19,7 +19,7 @@ $transition-sidebar-speed: "0.2s";
 }
 
 .main {
-  flex: 1;
+  flex: 1; //1 0 100%
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,6 +42,9 @@ $transition-sidebar-speed: "0.2s";
     .sidebar_logo {
       svg {
         transform: rotate(-180deg);
+        path {
+          fill: $bg-color-primary;
+        }
       }
     }
     ~ .darkness {
@@ -76,6 +79,9 @@ $transition-sidebar-speed: "0.2s";
     height: 2rem;
     transform: rotate(0deg);
     transition: transform 400ms;
+    path {
+      fill: $bg-color-sidebar-icons;
+    }
   }
 }
 
@@ -98,6 +104,9 @@ $transition-sidebar-speed: "0.2s";
     margin: 0 1.5rem;
     width: 2rem;
     height: 2rem;
+    path {
+      fill: $bg-color-sidebar-icons;
+    }
   }
 }
 
@@ -114,8 +123,11 @@ $transition-sidebar-speed: "0.2s";
 
   &:hover {
     filter: grayscale(0%) opacity(1);
-    background-color: gray;
+    background-color: rgb(228, 228, 228);
     color: $bg-color-primary;
+    path {
+      fill: $bg-color-primary;
+    }
   }
 }
 
@@ -161,7 +173,7 @@ $transition-sidebar-speed: "0.2s";
   }
 
   .link_name {
-    color: "#007acc";
+    color: $color-footer-link;
   }
 }
 
