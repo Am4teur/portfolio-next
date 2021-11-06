@@ -42,9 +42,6 @@ $transition-sidebar-speed: "0.2s";
     .sidebar_logo {
       svg {
         transform: rotate(-180deg);
-        path {
-          fill: $bg-color-primary;
-        }
       }
     }
     ~ .darkness {
