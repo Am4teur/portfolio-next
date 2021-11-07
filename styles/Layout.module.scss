@@ -15,7 +15,7 @@ $transition-sidebar-speed: "0.2s";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 4rem 0 calc(4rem + #{$sidebar-width});
+  margin: 0 0 0 $sidebar-width;
 }
 
 .main {
@@ -52,20 +52,6 @@ $transition-sidebar-speed: "0.2s";
   }
 }
 
-.darkness {
-  background-color: rgba(0, 0, 0, 0.5);
-  //display: none;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  transition: opacity #{$transition-sidebar-speed} linear;
-}
-
 .sidebar_logo {
   width: 100%;
   
@@ -76,6 +62,7 @@ $transition-sidebar-speed: "0.2s";
     height: 2rem;
     transform: rotate(0deg);
     transition: transform 400ms;
+    color: $bg-color-sidebar-icons;
     path {
       fill: $bg-color-sidebar-icons;
     }
@@ -96,6 +83,19 @@ $transition-sidebar-speed: "0.2s";
   list-style-type: none;
   width: 100%;
 
+
+}
+
+.sidebar_link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  cursor: pointer;
+  
+  transition: $transition-speed;
+
   svg {
     min-width: 2rem;
     margin: 0 1.5rem;
@@ -105,22 +105,17 @@ $transition-sidebar-speed: "0.2s";
       fill: $bg-color-sidebar-icons;
     }
   }
-}
 
-.sidebar_link {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  color: $bg-color-primary;
-  text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
-  cursor: pointer;
-  
-  transition: $transition-speed;
+  .item_text {
+    opacity: 0;
+    margin-left: 0.25rem;
+    transition: opacity #{$transition-sidebar-speed};
+    font-size: 1.25rem;
+  }
 
   &:hover {
     filter: grayscale(0%) opacity(1);
-    background-color: rgb(228, 228, 228);
+    background-color: $bg-color-sidebar-icons;
     color: $bg-color-primary;
     path {
       fill: $bg-color-primary;
@@ -128,10 +123,18 @@ $transition-sidebar-speed: "0.2s";
   }
 }
 
-.item_text {
+.darkness {
+  background-color: rgba(0, 0, 0, 0.5);
+  //display: none;
+  visibility: hidden;
   opacity: 0;
-  margin-left: 0.25rem;
-  transition: opacity #{$transition-sidebar-speed};
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  transition: opacity #{$transition-sidebar-speed} linear;
 }
 
 /* FOOTER */
