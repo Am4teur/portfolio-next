@@ -1,16 +1,24 @@
 @import "colors";
+@import "mixins";
 
-.projects {
+.projects-section {
   min-height: 200px;
   width: 100%;
+  background-color: $bg-section-projects;
+
+  .projects {
+    margin: 0 4rem 0 4rem;
+  }
+
+  .waves {
+    @include spacer;
+    background-image: url('../public/svg/dividers/wave2.svg');
+  }
 }
 
 .centered {
   height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered;
   font-size: 3rem;
 }
 

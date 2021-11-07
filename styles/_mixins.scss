@@ -1,0 +1,14 @@
+@mixin centered {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin spacer {
+  aspect-ratio: 960/200; // this does not work with other media queries/window sizes
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

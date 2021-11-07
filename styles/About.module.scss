@@ -1,11 +1,4 @@
-@mixin centered {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
+@import "mixins";
 
 .about-section {
   display: flex;
@@ -13,9 +6,12 @@
   
   min-height: 400px;
   width: 100%;
+
+  .about {
+    padding: 0 4rem 0 4rem;
+  }
   
   .title {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +20,7 @@
 
   .card-about {
     display: flex;
-  
+
     .description {
       flex: 0 0 70%;
     }
@@ -33,5 +29,10 @@
       flex: 0 0 30%;
       border-radius: 0.25rem;
     }
+  }
+
+  .waves {
+    @include spacer;
+    background-image: url('../public/svg/dividers/wave1.svg');
   }
 }

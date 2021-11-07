@@ -22,14 +22,15 @@ export default function Layout({ children }: layoutProps) {
   return (
     <div className={styles.layout}>
       <Sidebar/>
-      
+      <div className={styles.darkness}></div>
+
       <div className={styles.container}>
         <div className={styles.main}>
           {children}
         </div>
         <Footer/>
       </div>
-      <div className={styles.darkness}></div>
+      
       <ToTop/>
     </div>
   )
