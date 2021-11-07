@@ -7,12 +7,12 @@
   background-color: $bg-section-projects;
 
   .projects {
+    flex: 1;
     margin: 0 4rem 0 4rem;
   }
 
   .waves {
-    @include spacer;
-    background-image: url('../public/svg/dividers/wave2.svg');
+    @include spacer('../public/svg/dividers/wave-even-1.svg');
   }
 }
 

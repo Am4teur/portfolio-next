@@ -1,4 +1,5 @@
 @import "colors";
+@import "mixins";
 
 $sidebar-width: 5rem;
 $transition-speed: "60ms";
@@ -158,6 +159,12 @@ $transition-sidebar-speed: "0.2s";
       height: 3rem;
       width: 3rem;
       margin: 0 0.5rem 0 0.5rem;
+
+      svg {
+        path {
+          fill: $bg-color-sidebar-icons;
+        }
+      }
     }
   }
 

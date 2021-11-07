@@ -1,18 +1,18 @@
-@mixin centered {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
+@import "colors";
+@import "mixins";
 
 .blog-section {
   display: flex;
   flex-direction: column;
+  background-color: $bg-section-odd;
   
   min-height: 400px;
   width: 100%;
+
+  .blog {
+    flex: 1;
+    margin: 0 4rem 0 4rem;
+  }
 
   .title {
     width: 100%;
@@ -65,5 +65,9 @@
         }
       }
     }
+  }
+
+  .waves {
+    @include spacer('../public/svg/dividers/wave-last.svg');
   }
 }

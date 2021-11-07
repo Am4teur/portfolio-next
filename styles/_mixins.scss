@@ -5,9 +5,10 @@
   align-items: center;
 }
 
-@mixin spacer {
+@mixin spacer($url) {
   aspect-ratio: 960/200; // this does not work with other media queries/window sizes
   width: 100%;
+  background-image: url($url);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

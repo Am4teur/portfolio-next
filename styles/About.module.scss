@@ -8,7 +8,8 @@
   width: 100%;
 
   .about {
-    padding: 0 4rem 0 4rem;
+    flex: 1;
+    margin: 0 4rem 0 4rem;
   }
   
   .title {
@@ -32,7 +33,6 @@
   }
 
   .waves {
-    @include spacer;
-    background-image: url('../public/svg/dividers/wave1.svg');
+    @include spacer('../public/svg/dividers/wave-odd-1.svg');
   }
 }
