@@ -195,7 +195,7 @@ $transition-sidebar-speed: "0.2s";
 /* TODO when its exactly 600px it messes up the sidebar */
 @media only screen and (max-width: 600px) {
   .container {
-    margin-left: 4rem; /*delete margin of sidebar*/
+    margin-left: 0; /*delete margin of sidebar*/
   }
 
   .sidebar {

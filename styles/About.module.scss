@@ -1,3 +1,4 @@
+@import "colors";
 @import "mixins";
 
 .about-section {
@@ -8,28 +9,23 @@
   width: 100%;
 
   .about {
-    flex: 1;
     margin: 0 4rem 0 4rem;
   }
   
   .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered;
     font-size: 3rem;
   }
 
-  .card-about {
+  .card {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .description {
-      flex: 0 0 70%;
-    }
-
-    .image {
-      flex: 0 0 30%;
-      border-radius: 0.25rem;
-    }
+    @include text1;
+    border-radius: 50px;
+    background-color: $bg-color-primary;
+    padding: 0 1.5rem 0 1.5rem;
   }
 
   .waves {
