@@ -18,7 +18,7 @@ export default function ToTop() {
   }
 
   return <>
-  {scrollPosition > 500 //TODO this needs to not be hardcoded, via <a href=...> or something
+  {scrollPosition > 300 //TODO this needs to not be hardcoded, via <a href=...> or something
     ?
     <Button onClick={goToTop} show>{arrowUp}</Button>
     :
