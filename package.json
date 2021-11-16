@@ -1,11 +1,14 @@
 {
   "name": "portfolio-next",
   "version": "0.1.0",
-  "private": true,
+  "description": "Daniel Castro's Portofolio Website",
+  "author": "Daniel Castro",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -19,6 +22,9 @@
   "devDependencies": {
     "@types/node": "^14.14.35",
     "@types/react": "^17.0.3",
+    "eslint": "^8.2.0",
+    "eslint-config-next": "^12.0.3",
+    "prettier": "^2.4.1",
     "typescript": "^4.2.3"
   }
 }
