@@ -12,6 +12,7 @@ export default function Blog() {
       <div className={styles.blog}>
         <span className={styles.title}>Blog</span>
         <div className={styles['blog-cards']}>
+
           <a className={styles['blog-card']} href="#">
             <div className={styles['blog-card__header']}>
               <span className={styles['blog-card__subtitle']}>Technical Blog</span>
@@ -21,6 +22,7 @@ export default function Blog() {
               <p>TODO nice description</p>
             </div>
           </a>
+          
           <a className={styles['blog-card']} href="#">
             <div className={styles['blog-card__description']}>
               <p>Interested in finding new books to read?</p>

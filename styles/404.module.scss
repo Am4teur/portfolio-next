@@ -1,0 +1,19 @@
+@import 'colors';
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: $bg-color-primary;
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: pointer;  
+  color: white;
+  font-size: 1.25rem;
+}

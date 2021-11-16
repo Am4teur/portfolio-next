@@ -14,7 +14,7 @@ export default function About() {
             <p>I&#39;m a Full-stack Software Engineer, with affinity to Frontend, based in Portugal!</p>
             <p>Interested in the field of Distributed
             Systems and Artificial Inteligence.</p>
-            <p>I love to be able to show my prjects via web, so naturally I fell in love with web
+            <p>I love to be able to show my projects via web, so naturally I fell in love with web
             development and design.</p>
           </span>
           {/* <Image className={styles['image']} src="/images/profile2.png" alt="Daniel Castro" width={300} height={384}></Image> */}
