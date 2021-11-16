@@ -32,7 +32,7 @@ export default function Sidebar() {
         <li className={styles.sidebar_logo}>
           <Link href="/"><a className={styles.sidebar_link} onClick={goToTop}>
             {arrowRightSVG}
-            <span className={styles.item_text}>DC Icon</span>
+            <span className={styles.item_text}>DC</span>
           </a></Link>
         </li>
         <li className={styles.sidebar_item}>
@@ -66,14 +66,14 @@ export default function Sidebar() {
       <li className={styles.sidebar_item}>
         <a className={styles.sidebar_link} onClick={changeMode}>
           {sunSVG}
-          <span className={styles.item_text}>Light Mode</span>
+          <span className={styles.item_text}>Light</span>
         </a>
       </li>
       :
       <li className={styles.sidebar_item}>
         <a className={styles.sidebar_link} onClick={changeMode}>
           {moonSVG}
-          <span className={styles.item_text}>Dark Mode</span>
+          <span className={styles.item_text}>Dark</span>
         </a>
       </li>
       }
