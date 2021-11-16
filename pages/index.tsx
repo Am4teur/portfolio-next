@@ -11,7 +11,7 @@ import styles from '../styles/Layout.module.scss';
 export default function Home() {
   return (
     <>
-      <Meta title="Daniel Castro"/>
+      <Meta title="Daniel Castro - Home"/>
       <Content/>
       <ToTop/>
     </>
