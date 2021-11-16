@@ -1,5 +1,13 @@
 import { useState } from 'react';
-import Link from 'next/link';
+
+// Next
+import NextLink from 'next/link';
+import NextImage from 'next/image';
+
+// components
+import { goToTop } from './ToTop';
+
+// syles
 import styles from '../styles/Layout.module.scss';
 
 export default function Sidebar() {
@@ -19,45 +27,38 @@ export default function Sidebar() {
     alert("This is not implemented yet! Thank you.")
   }
 
-  const goToTop = () => {
-    document.documentElement.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    })
-  }
-
   return (
     <nav className={styles.sidebar}>
       <ul className={styles.sidebar_items}>
         <li className={styles.sidebar_logo}>
-          <Link href="/"><a className={styles.sidebar_link} onClick={goToTop}>
+          <NextLink href="/"><a className={styles.sidebar_link} onClick={goToTop}>
             {arrowRightSVG}
-            <span className={styles.item_text}>DC</span>
-          </a></Link>
+            <NextImage src="/images/dcicon.png" alt="Daniel Castro" width={40} height={40} ></NextImage>
+          </a></NextLink>
         </li>
         <li className={styles.sidebar_item}>
-          <Link href="#about"><a className={styles.sidebar_link}>
+          <NextLink href="#about"><a className={styles.sidebar_link}>
             {userSVG}
             <span className={styles.item_text}>About</span>
-          </a></Link>
+          </a></NextLink>
         </li>
         <li className={styles.sidebar_item}>
-          <Link href="#projects"><a className={styles.sidebar_link}>
+          <NextLink href="#projects"><a className={styles.sidebar_link}>
             {projectSVG}
             <span className={styles.item_text}>Projects</span>
-          </a></Link>
+          </a></NextLink>
         </li>
         <li className={styles.sidebar_item}>
-          <Link href="#blog"><a className={styles.sidebar_link}>
+          <NextLink href="#blog"><a className={styles.sidebar_link}>
             {blogSVG}
             <span className={styles.item_text}>Blog</span>
-          </a></Link>
+          </a></NextLink>
         </li>
         <li className={styles.sidebar_item}>
-          <Link href="#contact"><a className={styles.sidebar_link}>
+          <NextLink href="#contact"><a className={styles.sidebar_link}>
             {emailEnvelopeSVG}
             <span className={styles.item_text}>Contact</span>
-          </a></Link>
+          </a></NextLink>
         </li>
       </ul>
       
