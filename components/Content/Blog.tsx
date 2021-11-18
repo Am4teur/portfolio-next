@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import FadeInWhenVisible from '../FadeInWhenVisible';
 
 import styles from '../../styles/Blog.module.scss';
 
@@ -9,6 +9,8 @@ export default function Blog() {
 
   return (
     <section className={styles['blog-section']}  id="blog">
+
+      <FadeInWhenVisible>
       <div className={styles.blog}>
         <span className={styles.title}>Blog</span>
         <div className={styles['blog-cards']}>
@@ -36,6 +38,7 @@ export default function Blog() {
           </a>
         </div>
       </div>
+      </FadeInWhenVisible>
 
       <div className={styles.waves}></div>
     </section>

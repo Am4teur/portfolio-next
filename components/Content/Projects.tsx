@@ -1,3 +1,5 @@
+import FadeInWhenVisible from '../FadeInWhenVisible';
+
 // styles
 import styles from '../../styles/Projects.module.scss';
 
@@ -5,6 +7,7 @@ export default function Projects() {
   return (
     <section className={styles['projects-section']}  id="projects">
 
+      <FadeInWhenVisible>
       <div className={styles.projects}>
         <span className={styles.centered}>Projects</span>
         <div className={styles.listProjects}>
@@ -25,6 +28,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      </FadeInWhenVisible>
 
       <div className={styles.waves}></div>
     </section>
