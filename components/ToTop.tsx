@@ -19,7 +19,7 @@ export default function ToTop() {
   return ( 
     <AnimatePresence>
       {scrollPosition > 300 && (
-        <motion.div
+        <motion.button
           onClick={goToTop}
           className={styles['goToTop-btn']}
           initial={{ y: 100, opacity: 0 }}
@@ -33,7 +33,7 @@ export default function ToTop() {
           whileTap={{ scale: 0.8 }}
         >
           {arrowUp}
-        </motion.div>
+        </motion.button>
       )}
     </AnimatePresence>
   );
