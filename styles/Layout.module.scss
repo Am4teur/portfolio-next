@@ -184,14 +184,6 @@ $transition-sidebar-speed: "0.2s";
   }
 }
 
-/* TO TOP */
-.arrowUp {
-  min-width: 2rem;
-  margin: 0 1.5rem;
-  width: 2rem;
-  height: 2rem;
-}
-
 /* TODO when its exactly 600px it messes up the sidebar */
 @media only screen and (max-width: 600px) {
   .container {
@@ -240,6 +232,12 @@ $transition-sidebar-speed: "0.2s";
       opacity: 1;
     }
   }
+}
+
+/* TO TOP */
+.arrowUp {
+  width: 2rem;
+  height: 2rem;
 }
 
 .goToTop-btn {
