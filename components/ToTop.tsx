@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import useScrollPosition from "./Effects/useScrollPosition";
 
-import styled from 'styled-components';
 import styles from '../styles/Layout.module.scss';
 
 export const goToTop = () => {
@@ -20,19 +19,21 @@ export default function ToTop() {
   return ( 
     <AnimatePresence>
       {scrollPosition > 300 && (
-        <motion.button
+        <motion.div
           onClick={goToTop}
           className={styles['goToTop-btn']}
           initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
+          exit={{ y: 100, opacity: 0, transition: { duration: 0.6 } }}
 
-          whileHover={{ scale: 1.2 }}
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.2 }
+          }}
           whileTap={{ scale: 0.8 }}
         >
           {arrowUp}
-        </motion.button>
+        </motion.div>
       )}
     </AnimatePresence>
   );
