@@ -5,11 +5,15 @@
   display: flex;
   flex-direction: column;
   
-  min-height: 400px;
   width: 100%;
 
   .about {
     margin: 0 4rem 0 4rem;
+    flex: 1; // flex 1 is needed because of the waves
+  }
+
+  .pixelart {
+    @include centered;
   }
 
   .title {
@@ -32,7 +36,15 @@
     padding: 0 1.5rem 0 1.5rem;
   }
 
+  .description {
+    @include centered;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+  }
+
   .waves {
+    // TODO waves do not move or adapt in the bg, like design code
+    // overflow-x: hidden;
     @include spacer('../public/svg/dividers/wave-odd-1.svg');
   }
 }

@@ -184,14 +184,6 @@ $transition-sidebar-speed: "0.2s";
   }
 }
 
-/* TO TOP */
-.arrowUp {
-  min-width: 2rem;
-  margin: 0 1.5rem;
-  width: 2rem;
-  height: 2rem;
-}
-
 /* TODO when its exactly 600px it messes up the sidebar */
 @media only screen and (max-width: 600px) {
   .container {
@@ -239,5 +231,40 @@ $transition-sidebar-speed: "0.2s";
     .item_text {
       opacity: 1;
     }
+  }
+}
+
+/* TO TOP */
+.arrowUp {
+  width: 2rem;
+  height: 2rem;
+}
+
+.goToTop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #007acc;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 60px;
+  height: 60px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  &:hover {
+    background: #005c99; // HSL #007acc 60% dark => HSL #005c99 30% dark
+  }
+
+  @media only screen and (max-width: 600px) {
+    bottom: calc(5rem + 20px); // 5rem = sidebar height when on bottom + 20px normal bottom size
+    right: 20px;
   }
 }
