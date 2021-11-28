@@ -23,16 +23,16 @@ export default function About() {
           
         </div>
         <div className={styles.card}>
-          <p>I&#39;m a Software Engineer, with affinity to Frontend, based in Lisbon, Portugal!</p>
+          <p>I&#39;m a Software Engineer, with an affinity to Frontend, based in Lisbon, Portugal!</p>
         </div>
         <div className={styles.description}>
-          <p>I consider myself an active learner and I&#39;m always exploring new and modern technologies.</p>
-          <p>Recently, I&#39;ve completed a master's in Computer Science and Engineering.</p>
-          <p>Currently, I&#39;m a Frontend Software Engineer at&nbsp;
+          <span>I consider myself an active learner and I&#39;m always exploring new and modern technologies.</span>
+          <span>Recently, I&#39;ve completed a master's in Computer Science and Engineering.</span>
+          <span>Currently, I&#39;m a Frontend Software Engineer at&nbsp;
             <a href="https://www.linkedin.com/company/volkswagen-digital-solutions/mycompany/">
               Volkswagen Digital Solutions
             </a>
-          .</p>
+          .</span>
           {/* <Image className={styles['image']} src="/images/profile2.png" alt="Daniel Castro" width={300} height={384}></Image> */}
         </div>
       </motion.div>

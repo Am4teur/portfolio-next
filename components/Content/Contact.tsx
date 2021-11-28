@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-
 import styles from '../../styles/Contact.module.scss';
+import FadeInWhenVisible from '../FadeInWhenVisible';
 
 export default function Contact() {
   const [errorMsg, setErrorMsg] = useState("");
@@ -40,6 +40,8 @@ export default function Contact() {
 
 
   return (
+    <FadeInWhenVisible>
+
     <section className={styles.contact} id="contact">
       <div className={styles.centered}>
         Contact Me!
@@ -70,5 +72,6 @@ export default function Contact() {
               
       </form>
     </section>
+    </FadeInWhenVisible>
   )
 }

@@ -4,7 +4,6 @@
 .blog-section {
   display: flex;
   flex-direction: column;
-  background-color: $bg-section-odd;
   
   min-height: 400px;
   width: 100%;
@@ -20,6 +19,7 @@
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    margin-bottom: 1.5rem;
   }
   
   .blog-cards {
@@ -58,16 +58,18 @@
         flex: 1 1 70%;
         @include centered;
         flex-direction: column;
-        padding: 0.5rem 0rem 0.5rem 0.5rem;
+        padding: 0.5rem 0 0.5rem 0.5rem;
 
         p {
           font-size: 1.5rem;
+          margin: 1rem 1rem 1rem 1rem;
+          text-align: center;
         }
       }
     }
   }
 
   .waves {
-    @include spacer('../public/svg/dividers/wave-last.svg');
+    @include spacer('../public/svg/dividers/layered-waves-haikei(1).svg');
   }
 }

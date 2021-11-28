@@ -40,11 +40,15 @@
     @include centered;
     flex-direction: column;
     margin: 1rem 0 1rem 0;
+
+    span {
+      margin-bottom: 1rem;
+    }
   }
 
   .waves {
     // TODO waves do not move or adapt in the bg, like design code
     // overflow-x: hidden;
-    @include spacer('../public/svg/dividers/wave-odd-1.svg');
+    @include spacer('../public/svg/dividers/layered-waves-haikei(1).svg');
   }
 }

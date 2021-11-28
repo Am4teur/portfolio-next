@@ -6,7 +6,7 @@
 }
 
 @mixin spacer($url) {
-  aspect-ratio: 960/200; // this does not work with other media queries/window sizes
+  aspect-ratio: 960/400; // this does not work with other media queries/window sizes
   width: 100%;
   background-image: url($url);
   background-repeat: no-repeat;

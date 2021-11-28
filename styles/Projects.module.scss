@@ -4,7 +4,6 @@
 .projects-section {
   min-height: 200px;
   width: 100%;
-  background-color: $bg-section-projects;
 
   .projects {
     flex: 1;
@@ -12,7 +11,7 @@
   }
 
   .waves {
-    @include spacer('../public/svg/dividers/wave-even-1.svg');
+    @include spacer('../public/svg/dividers/layered-waves-haikei(2).svg');
   }
 }
 
@@ -37,11 +36,28 @@
 
   .item {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
     flex-direction: column;
     border: 2px solid #000000;
     border-radius: 0.5rem;
     box-sizing: border-box;
     box-shadow: 0 0 10px 3px $shadow-color;
+
+    .image1 {
+      height: 300px;
+      width: 300px;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    .image2 {
+      width: 100%;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
 
     .info {
       display: flex;
@@ -54,6 +70,7 @@
 
       .project-title {
         font-size: 2rem;
+        margin-right: 1rem;
       }
 
       .description {
@@ -68,6 +85,7 @@
 
       .tech {
         font-size: 1rem;
+        font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
       }
 
       .external-link {

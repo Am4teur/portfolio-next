@@ -17,11 +17,14 @@ export default function Projects() {
         <div className={styles.projectsList}>
           
           <div className={styles.item}>
-            <img src="/images/random.jpg" alt="Random" />
+            <img src="/images/mazer.png" alt="Mazer" className={styles.image1}/>
 
             <div className={styles.info}>
 
-              <span className={styles['project-title']}>Mazer</span>
+              <div>
+                <span className={styles['project-title']}>Mazer</span>
+                <NextImage src="/images/mazerIcon.png" alt="mazer" width={24} height={24}/>
+              </div>
               <span className={styles['description']}>A multiplayer maze solving game.</span>
 
               <p className={styles['tech']}>MERN Typescript Socket.io CSS-in-JS</p>
@@ -39,11 +42,14 @@ export default function Projects() {
           </div>
 
           <div className={styles.item}>
-            <img src="/images/random.jpg" alt="Random" />
+            <img src="/images/risingArt.png" alt="Rising Art" className={styles.image2}/>
 
             <div className={styles.info}>
 
-              <span className={styles['project-title']}>Rising Art</span>
+              <div>
+                <span className={styles['project-title']}>Rising Art</span>
+                <NextImage src="/images/risingArtIcon.png" alt="mazer" width={24} height={24}/>
+              </div>
               <span className={styles['description']}>E-shop where new and rising artists can sell their art.</span>
               
               <p className={styles['tech']}>React MUI Commerce.js</p>
