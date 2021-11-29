@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@font-face {  font-family: 'Segoe UI'; font-style: normal; font-weight: normal; src: local('Segoe UI Regular'),     url('./fonts/Segoe UI.woff')             format('woff'); }
+@font-face {  font-family: 'Segoe UI'; font-style: italic; font-weight: normal; src: local('Segoe UI Italic'),      url('./fonts/Segoe UI Italic.woff')      format('woff'); }
+@font-face {  font-family: 'Segoe UI'; font-style: normal; font-weight: bold;   src: local('Segoe UI Bold'),        url('./fonts/Segoe UI Bold.woff')        format('woff'); }
+@font-face {  font-family: 'Segoe UI'; font-style: italic; font-weight: bold;   src: local('Segoe UI Bold Italic'), url('./fonts/Segoe UI Bold Italic.woff') format('woff'); }
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Open+Sans&display=swap');
+
+$font-global: 'M PLUS Rounded 1c', 'Segoe UI', 'Nunito Sans', sans-serif, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-tech: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;

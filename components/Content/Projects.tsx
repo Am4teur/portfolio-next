@@ -52,7 +52,7 @@ export default function Projects() {
               </div>
               <span className={styles['description']}>E-shop where new and rising artists can sell their art.</span>
               
-              <p className={styles['tech']}>React MUI Commerce.js</p>
+              <p className={styles['tech']}>Stripe React MUI Commerce.js</p>
               <div className={styles['icons']}>
                 <a href="https://risingart.netlify.app/" className={styles['external-link']}>
                   {externalLink}

@@ -1,5 +1,4 @@
-@import "colors";
-@import "mixins";
+@import "colors", 'fonts', "mixins";
 
 .projects-section {
   min-height: 200px;
@@ -85,7 +84,7 @@
 
       .tech {
         font-size: 1rem;
-        font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+        font-family: $font-tech;
       }
 
       .external-link {
