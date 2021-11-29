@@ -49,6 +49,6 @@
   .waves {
     // TODO waves do not move or adapt in the bg, like design code
     // overflow-x: hidden;
-    @include spacer('../public/svg/dividers/layered-waves-haikei(1).svg');
+    @include spacer('../public/svg/dividers/about-waves.svg');
   }
 }
