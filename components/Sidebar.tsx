@@ -15,6 +15,17 @@ import emailEnvelopeSVG from '../public/svg/sidebar/emailEnvelopeSVG';
 import sunSVG from '../public/svg/sidebar/sunSVG';
 import moonSVG from '../public/svg/sidebar/moonSVG';
 
+const arrowRightMotion = {
+  hover: {
+    // rotate: -180,
+    // y: -5,
+    rotateY: 180,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
 export default function Sidebar() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -24,12 +35,14 @@ export default function Sidebar() {
   };
 
   return (
-    <motion.nav className={styles.sidebar}>
+    <motion.nav className={styles.sidebar} whileHover="hover">
       <ul className={styles.sidebar_items}>
         <li className={styles.sidebar_logo}>
           <NextLink href="/">
             <a className={styles.sidebar_link} onClick={goToTop}>
-              {arrowRightSVG}
+              <motion.div variants={arrowRightMotion}>
+                {arrowRightSVG}
+              </motion.div>
               <NextImage
                 src="/images/dcicon.png"
                 alt="Daniel Castro"

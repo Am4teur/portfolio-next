@@ -1,11 +1,12 @@
-@import "colors";
-@import "mixins";
+@import 'colors';
+@import 'mixins';
 
 $sidebar-width: 5rem;
-$transition-speed: "60ms";
-$transition-sidebar-speed: "0.2s";
+$transition-speed: '60ms';
+$transition-sidebar-speed: '0.2s';
 
-.layout { /* This makes .darkness full height 100% OK */
+.layout {
+  /* This makes .darkness full height 100% OK */
   overflow: hidden;
   position: relative;
 }
@@ -42,7 +43,7 @@ $transition-sidebar-speed: "0.2s";
   &:hover {
     .sidebar_logo {
       svg {
-        transform: rotate(-180deg);
+        // transform: rotate(-180deg);
       }
     }
     ~ .darkness {
@@ -55,14 +56,14 @@ $transition-sidebar-speed: "0.2s";
 
 .sidebar_logo {
   width: 100%;
-  
+
   svg {
     min-width: 2rem;
     margin: 0 1.5rem;
     width: 2rem;
     height: 2rem;
-    transform: rotate(0deg);
-    transition: transform 400ms;
+    // transform: rotate(0deg);
+    // transition: transform 400ms;
     color: $bg-color-sidebar-icons;
     path {
       fill: $bg-color-sidebar-icons;
@@ -83,8 +84,6 @@ $transition-sidebar-speed: "0.2s";
 .sidebar_item {
   list-style-type: none;
   width: 100%;
-
-
 }
 
 .sidebar_link {
@@ -94,7 +93,7 @@ $transition-sidebar-speed: "0.2s";
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   cursor: pointer;
-  
+
   transition: $transition-speed;
 
   svg {
@@ -213,7 +212,6 @@ $transition-sidebar-speed: "0.2s";
   .footer {
     margin-bottom: 5rem;
   }
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -226,7 +224,7 @@ $transition-sidebar-speed: "0.2s";
   .sidebar:hover {
     width: 12rem;
   }
-  
+
   .sidebar:hover {
     .item_text {
       opacity: 1;
@@ -264,7 +262,9 @@ $transition-sidebar-speed: "0.2s";
   }
 
   @media only screen and (max-width: 600px) {
-    bottom: calc(5rem + 20px); // 5rem = sidebar height when on bottom + 20px normal bottom size
+    bottom: calc(
+      5rem + 20px
+    ); // 5rem = sidebar height when on bottom + 20px normal bottom size
     right: 20px;
   }
 }
