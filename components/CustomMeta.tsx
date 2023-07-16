@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function Meta({title, keywords, description}) {
+const CustomMeta = ({ title, keywords, description }) => {
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,11 +10,13 @@ export default function Meta({title, keywords, description}) {
       <link rel="icon" href="/images/favicon.ico" />
       <title>{title}</title>
     </Head>
-  )
-}
+  );
+};
 
-Meta.defaultProps = {
-  title: "Daniel Castro",
-  keywords: "portfolio",
-  description: "Have a look at Daniel Castro portfolio website!"
-}
+CustomMeta.defaultProps = {
+  title: 'Daniel Castro',
+  keywords: 'portfolio',
+  description: 'Have a look at Daniel Castro portfolio website!',
+};
+
+export default CustomMeta;

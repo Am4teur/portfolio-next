@@ -1,14 +1,12 @@
-// styles
+import NextLink from 'next/link';
+import CustomMeta from '../components/CustomMeta';
+
 import styles from '../styles/404.module.scss';
 
-// components
-import Meta from '../components/Meta';
-import NextLink from 'next/link';
-
-export default function Custom404() {
+const Custom404 = () => {
   return (
     <div className={styles.centered}>
-      <Meta title="Daniel Castro - Not Found"/>
+      <CustomMeta title="Daniel Castro - Not Found" />
       <h1>Page Not Found</h1>
 
       <p>This page does not exist.</p>
@@ -17,4 +15,6 @@ export default function Custom404() {
       </NextLink>
     </div>
   );
-}
+};
+
+export default Custom404;

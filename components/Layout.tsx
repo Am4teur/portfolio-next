@@ -1,35 +1,30 @@
 import { useEffect } from 'react';
 
-// components
-import Sidebar from './Sidebar';
 import Footer from './Footer';
+import Sidebar from './Sidebar';
 
-// styles
 import styles from '../styles/Layout.module.scss';
 
-
 interface layoutProps {
-  children: JSX.Element,
+  children: JSX.Element;
 }
 
-export default function Layout({ children }: layoutProps) {
-
+const Layout = ({ children }: layoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
 
   return (
     <div className={styles.layout}>
-      <Sidebar/>
+      <Sidebar />
       <div className={styles.darkness}></div>
 
       <div className={styles.container}>
-        <div className={styles.main}>
-          {children}
-        </div>
-        <Footer/>
+        <div className={styles.main}>{children}</div>
+        <Footer />
       </div>
-      
     </div>
-  )
+  );
 };
+
+export default Layout;

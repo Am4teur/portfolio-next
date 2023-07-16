@@ -1,11 +1,9 @@
-// Next
-import NextImage from 'next/image';
 import { motion } from 'framer-motion';
+import NextImage from 'next/image';
 
-// styles
 import styles from '../../styles/About.module.scss';
 
-export default function About() {
+const About = () => {
   return (
     <section className={styles['about-section']} id="about">
       <motion.div
@@ -26,26 +24,29 @@ export default function About() {
         <div className={styles.pixelart}></div>
         <div className={styles.card}>
           <p>
-            I&#39;m a Software Engineer, with an affinity to Frontend, based in
-            Lisbon, Portugal!
+            Fullstack SWE, with affinity/focus to Frontend, based in Lisbon,
+            Portugal [portugal flag emoji]
           </p>
         </div>
         <div className={styles.description}>
           <span>
-            I consider myself an active learner and I&#39;m always exploring new
-            and modern technologies.
+            Active learner and explorer of modern technologies. NextJS
+            enthusiast
           </span>
           <span>
-            Recently, I&#39;ve completed a master's in Computer Science and
-            Engineering.
+            Master&#39;s degree in Computer Science and Engineering at Instituto
+            Superior Técnico, #1 Ranked Engineering University in [Portugal
+            Icon]
           </span>
           <span>
-            Currently, I&#39;m a Frontend Software Engineer at&nbsp;
+            Developing as a Fullstack SWE at Tripadvisor, on the{' '}
             <a href="https://www.linkedin.com/company/volkswagen-digital-solutions/mycompany/">
-              Volkswagen Digital Solutions
-            </a>
-            .
+              Viator
+            </a>{' '}
+            product. My team is Listing & Content Team. We manage our CMS and
+            all website pages that have a Listing of product. .
           </span>
+          {/* Missing a team photo */}
           {/* <Image className={styles['image']} src="/images/profile2.png" alt="Daniel Castro" width={300} height={384}></Image> */}
         </div>
       </motion.div>
@@ -53,4 +54,6 @@ export default function About() {
       <div className={styles.waves}></div>
     </section>
   );
-}
+};
+
+export default About;

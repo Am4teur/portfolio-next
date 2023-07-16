@@ -1,17 +1,13 @@
-// components
 import Content from '../components/Content/Content';
-import Meta from '../components/Meta';
+import CustomMeta from '../components/CustomMeta';
 import ToTop from '../components/ToTop';
 
-// styles
-import styles from '../styles/Layout.module.scss';
+const Home = () => (
+  <>
+    <CustomMeta title="Daniel Castro - Home" />
+    <Content />
+    <ToTop />
+  </>
+);
 
-export default function Home() {
-  return (
-    <>
-      <Meta title="Daniel Castro - Home"/>
-      <Content/>
-      <ToTop/>
-    </>
-  );
-}
+export default Home;
