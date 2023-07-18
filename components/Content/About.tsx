@@ -24,27 +24,27 @@ const About = () => {
         <div className={styles.pixelart}></div>
         <div className={styles.card}>
           <p>
-            Fullstack SWE, with affinity/focus to Frontend, based in Lisbon,
-            Portugal [portugal flag emoji]
+            {/* affinity/focus */}
+            Fullstack SWE, with affinity to Frontend, based in Lisbon, Portugal
+            🇵🇹
           </p>
         </div>
         <div className={styles.description}>
           <span>
-            Active learner and explorer of modern technologies. NextJS
+            Active learner and explorer of modern technologies | NextJS
             enthusiast
           </span>
           <span>
-            Master&#39;s degree in Computer Science and Engineering at Instituto
-            Superior Técnico, #1 Ranked Engineering University in [Portugal
-            Icon]
-          </span>
-          <span>
-            Developing as a Fullstack SWE at Tripadvisor, on the{' '}
+            Developing software as a Fullstack SWE at Tripadvisor, on the{' '}
             <a href="https://www.linkedin.com/company/volkswagen-digital-solutions/mycompany/">
               Viator
             </a>{' '}
-            product. My team is Listing & Content Team. We manage our CMS and
-            all website pages that have a Listing of product. .
+            product | Member of the Listing & Content Team | We manage the CMS
+            and all website pages that have products listing
+          </span>
+          <span>
+            Master's degree in Computer Science and Engineering at Instituto
+            Superior Técnico, #1 Ranked Engineering University in Portugal
           </span>
           {/* Missing a team photo */}
           {/* <Image className={styles['image']} src="/images/profile2.png" alt="Daniel Castro" width={300} height={384}></Image> */}
