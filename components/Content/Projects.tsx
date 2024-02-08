@@ -3,7 +3,7 @@ import externalLink from '../../public/svg/externalLink';
 import github from '../../public/svg/github';
 import FadeInWhenVisible from '../FadeInWhenVisible';
 
-import styles from '../../styles/Projects.module.scss';
+import styles from '@styles/Projects.module.scss';
 
 const Projects = () => (
   <section className={styles['projects-section']} id="projects">

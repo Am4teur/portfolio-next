@@ -1,0 +1,11 @@
+.navbarContainer {
+  width: 100%;
+  height: 80px; // 64px or 80px
+
+  // TODO remove after starting real development
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  box-sizing: border-box;
+}

@@ -6,7 +6,7 @@ import NextLink from 'next/link';
 
 import { goToTop } from './ToTop';
 
-import styles from '../styles/Layout.module.scss';
+import styles from '@styles/Layout.module.scss';
 // import blogSVG from '../public/svg/sidebar/blogSVG';
 // import arrowRightSVG from '../public/svg/sidebar/arrowRightSVG';
 // import userSVG from '../public/svg/sidebar/userSVG';

@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 import Footer from './Footer';
-import Sidebar from './Sidebar';
 
-import styles from '../styles/Layout.module.scss';
+import styles from '@styles/Layout.module.scss';
+import Navbar from './Navbar';
 
 interface layoutProps {
   children: JSX.Element;
@@ -16,9 +16,9 @@ const Layout = ({ children }: layoutProps) => {
 
   return (
     <div className={styles.layout}>
-      <Sidebar />
       <div className={styles.darkness}></div>
 
+      <Navbar />
       <div className={styles.container}>
         <div className={styles.main}>{children}</div>
         <Footer />

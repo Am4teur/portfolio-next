@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 import CustomMeta from '../components/CustomMeta';
 
-import styles from '../styles/404.module.scss';
+import styles from '@styles/404.module.scss';
 
 const Custom404 = () => {
   return (

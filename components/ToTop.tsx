@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import useScrollPosition from './Effects/useScrollPosition';
 
-import styles from '../styles/Layout.module.scss';
+import styles from '@styles/Layout.module.scss';
 
 const goToTop = () => {
   document.documentElement.scrollTo({

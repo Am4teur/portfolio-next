@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import NextImage from 'next/image';
 
-import styles from '../../styles/About.module.scss';
+import styles from '@styles/About.module.scss';
 
 const About = () => {
   return (
@@ -46,7 +46,7 @@ const About = () => {
             Master's degree in Computer Science and Engineering at Instituto
             Superior Técnico, #1 Ranked Engineering University in Portugal
           </span>
-          {/* Missing a team photo */}
+          {/* TODO Add team photo */}
           {/* <Image className={styles['image']} src="/images/profile2.png" alt="Daniel Castro" width={300} height={384}></Image> */}
         </div>
       </motion.div>

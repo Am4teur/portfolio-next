@@ -1,6 +1,6 @@
 import FadeInWhenVisible from '../FadeInWhenVisible';
 
-import styles from '../../styles/Blog.module.scss';
+import styles from '@styles/Blog.module.scss';
 
 const Blog = () => {
   var bookReviewSVG: string = '/svg/blog/undraw_book_lover_mkck.svg';

@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 
-import '../styles/globals.scss';
+import '@styles/globals.scss';
 
 // TODO fix this AppProps after converting to next13
 const App = ({ Component, pageProps }: AppProps) => (

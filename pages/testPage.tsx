@@ -1,6 +1,6 @@
 import CustomMeta from '../components/CustomMeta';
 
-// import styles from '../styles/Layout.module.scss';
+// import styles from '@styles/Layout.module.scss';
 
 const TestPage = () => (
   <>

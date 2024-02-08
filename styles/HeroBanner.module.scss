@@ -1,0 +1,24 @@
+.heroBannerContainer {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-image: url('/images/heroBanner/full-width-bg-image.jpg');
+
+  background-size: cover;
+  object-fit: cover;
+}
+
+.infoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contactButton {
+  width: fit-content;
+}

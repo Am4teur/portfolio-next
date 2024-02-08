@@ -1,4 +1,4 @@
-import styles from '../styles/Layout.module.scss';
+import styles from '@styles/Layout.module.scss';
 
 // TODO check this
 // https://dev.to/letsbsocial1/flexbox-sticky-footer-and-react-e1h

@@ -17,7 +17,8 @@ $transition-sidebar-speed: '0.2s';
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 $sidebar-width;
+  // Removing sidebar margin
+  // margin: 0 0 0 $sidebar-width;
 }
 
 .main {

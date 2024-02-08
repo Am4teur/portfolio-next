@@ -1,6 +1,6 @@
+import styles from '@styles/Contact.module.scss';
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
-import styles from '../../styles/Contact.module.scss';
 import FadeInWhenVisible from '../FadeInWhenVisible';
 
 const Contact = () => {
